@@ -7,6 +7,7 @@ width: 100vw;
 height: 50px;
 position: sticky;
 top: 0;
+z-index: 99;
 `
 const Wrapper = styled.div`
 height: 100%;
