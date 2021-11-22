@@ -15,6 +15,7 @@ padding: 30px;
 border-radius: 10px;
 cursor: pointer;
 box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+-webkit-box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
 `
 const Item = styled.div``
 const Title = styled.span`
@@ -46,8 +47,21 @@ margin-left: 20px;
 }
 `
 
+let featuredIconNegative = {
+    fontSize : "20px",
+    color: "red",
+    marginLeft: "5px"
+}
+let featuredIconPositive = {
+    fontSize : "20px",
+    color: "green",
+    marginLeft: "5px"
+}
+
 
 const Subtitle = styled.span``
+
+
 
 const FeaturedInfo = () => {
     return (
@@ -59,7 +73,7 @@ const FeaturedInfo = () => {
                     <Money>$2,415-</Money>
                     <Rate>-11.4
                         <ArrowDownward
-                        className="featuredIcon negative"
+                        style={featuredIconNegative}
                         /> 
                         </Rate>
                 </MoneyCont>
@@ -71,7 +85,7 @@ const FeaturedInfo = () => {
                 <Title>Sales</Title>
                 <MoneyCont>
                     <Money>$,415-</Money>
-                    <Rate>-1.4<ArrowDownward className="featuredIcon negative"/> </Rate>
+                    <Rate>-1.4<ArrowDownward style={featuredIconNegative}/> </Rate>
                 </MoneyCont>
             </Item>
             <Subtitle>Compared to last month</Subtitle>
@@ -81,7 +95,7 @@ const FeaturedInfo = () => {
                 <Title>Cost</Title>
                 <MoneyCont>
                     <Money>$2,215-</Money>
-                    <Rate>+2.7<ArrowUpward className="featuredIcon"/> </Rate>
+                    <Rate>+2.7<ArrowUpward style={featuredIconPositive}/> </Rate>
                 </MoneyCont>
             </Item>
             <Subtitle>Compared to last month</Subtitle>
