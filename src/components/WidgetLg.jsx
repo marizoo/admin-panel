@@ -13,19 +13,36 @@ font-size: 22px;
 font-weight: 600;
 `
 
+const Table = styled.table`
+width: 100%;
+border-spacing: 20px;
+`
 
-const Table = styled.table``
 const TableRow = styled.tr``
-const TableHead = styled.th``
-const TdUser = styled.td``
-const TdDate = styled.td``
-const TdAmount = styled.td``
+const TableHead = styled.th`
+text-align: left;
+`
+
+const TdUser = styled.td`
+display: flex;
+align-items: center;
+font-weight: 600;
+`
+const TdDate = styled.td`
+font-weight: 300;
+`
+
+const TdAmount = styled.td`
+font-weight: 300;
+`
+
 const TdStatus = styled.td``
 const Img = styled.img`
 width: 40px;
 height: 40px;
 border-radius: 50%;
 object-fit: cover;
+margin-right: 10px;
 ` 
 
 const Name = styled.span`` 
