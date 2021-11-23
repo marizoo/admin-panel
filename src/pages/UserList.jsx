@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { DataGrid } from "@material-ui/data-grid";
 
 
 const Cont = styled.div`
@@ -43,7 +44,13 @@ const UserList = () => {
 
     return (
         <Cont>
-         user list
+         <DataGrid
+        rows={rows}
+        disableSelectionOnClick
+        columns={columns}
+        pageSize={8}
+        checkboxSelection
+      />
         </Cont>
     )
 }
