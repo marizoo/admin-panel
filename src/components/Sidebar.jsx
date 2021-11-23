@@ -11,6 +11,7 @@ import { LineStyle,
     WorkOutline,
     Report, } from '@material-ui/icons'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Cont = styled.div`
@@ -55,7 +56,10 @@ background-color: #b4c4d8;
 }
 
 `
-
+const linkStyle ={
+    textDecoration: "none",
+    color: "inherit",
+}
 
 const Sidebar = () => {
     return (
@@ -81,14 +85,18 @@ const Sidebar = () => {
                 <Menu>
                     <Title>Quick Menu</Title>
                     <List>
-                        <ListItem >
-                            <PermIdentity style={{'marginRight':"5px", 'fontSize':"20px"}}/>
-                            Users
-                        </ListItem>
-                        <ListItem>
-                            <Storefront style={{'marginRight':"5px", 'fontSize':"20px"}}/>
-                            Products
-                        </ListItem>
+                        <Link to="/users" style={linkStyle}>
+                            <ListItem >
+                                <PermIdentity style={{'marginRight':"5px", 'fontSize':"20px"}}/>
+                                Users
+                            </ListItem>
+                        </Link>
+                        <Link to="/product" style={linkStyle}>
+                            <ListItem>
+                                <Storefront style={{'marginRight':"5px", 'fontSize':"20px"}}/>
+                                Products
+                            </ListItem>
+                        </Link>
                         <ListItem>
                             <AttachMoney style={{'marginRight':"5px", 'fontSize':"20px"}}/>
                             Transactions
