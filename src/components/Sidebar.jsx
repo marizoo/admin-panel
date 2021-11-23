@@ -91,7 +91,7 @@ const Sidebar = () => {
                                 Users
                             </ListItem>
                         </Link>
-                        <Link to="/product" style={linkStyle}>
+                        <Link to="/products" style={linkStyle}>
                             <ListItem>
                                 <Storefront style={{'marginRight':"5px", 'fontSize':"20px"}}/>
                                 Products
