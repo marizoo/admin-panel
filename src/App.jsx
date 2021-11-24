@@ -8,6 +8,7 @@ import User from "./pages/User";
 import NewUser from "./pages/NewUser";
 import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
+import NewProduct from "./pages/NewProduct";
 
 const App = () => {
   return (
@@ -35,7 +36,7 @@ const App = () => {
           <Product />
         </Route>
         <Route path="/newproduct">
-          <ProductList />
+          <NewProduct />
         </Route>
       </Switch>
     </ContainerMain>

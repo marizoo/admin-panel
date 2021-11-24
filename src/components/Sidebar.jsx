@@ -68,10 +68,12 @@ const Sidebar = () => {
                 <Menu>
                     <Title>Dashboard</Title>
                     <List>
+                        <Link to="/" style={linkStyle}>
                         <ListItem className="active">
                             <LineStyle style={{'marginRight':"5px", 'fontSize':"20px"}}/>
                             Home
                         </ListItem>
+                        </Link>
                         <ListItem>
                             <Timeline style={{'marginRight':"5px", 'fontSize':"20px"}}/>
                             Analytics
